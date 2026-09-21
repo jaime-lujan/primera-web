@@ -1,0 +1,110 @@
+header {
+	background: #56787B;
+	color: black;
+	padding: 30px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 6px rgba (0, 0, 5, 0.4);
+	font-size: 30px;
+	font-family: "Noto Sans";
+}
+
+body{
+	background-color: #1D292A;
+}
+
+main{
+	background-color: #84A6A9;
+	width: 100%;
+	margin: 10px 0px 10px;
+}
+
+table{
+	width: 100%;
+	margin: 10px 0px 10px;
+	table-layout: fixed;
+	padding: 5px;
+	
+}
+thead{
+	background-color: #70664F;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	table-layout: fixed;
+}
+
+tbody{
+	background-color: #4F7066;
+	align-items: center;
+	text-align: center;
+	table-layout: fixed;
+
+}
+tr{
+	height: 80px;
+	font-size: clamp(16px, 1.5vw, 30px);
+	word-break: break-word;
+}
+
+/* clases */
+.zorro {width: 25%}
+.PROGRAMACION {background-color: #E38A8A;}
+.PROYECTO {background-color: #D18AE3;}
+.SISTEMAS {background-color: #E3DF8A;}
+.DIGITALIZACION {background-color: #8AE3B2;}
+.MARCAS {background-color: #8D8AE3;}
+.INGLES {background-color: #7C729C;}
+.BASE {background-color: #E3B28A;}
+.IPE {background-color: #ABE38A;}
+.SOSTENIBILIDAD {background-color: #E38AB7;}
+.RECREO {background-color: #CFFACF;}
+.ENTORNOS {background-color: #8AE3DA;}
+
+
+footer{
+	background: #56787B;
+	color: black;
+	padding: 30px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 6px rgba (0, 0, 5, 0.4);
+	font-size: 20px;
+	font-family: "Noto Sans";
+}
+
+
+fieldset{
+	border: 2px solid #44534f;
+	background: #cfe8eb;
+	padding: 1rem;
+	font-size: 20px;
+	font-family: "Noto Sans";
+    align-items: center;
+    gap: 10px;
+}
+
+fieldset p > input:not([type="radio"]):not([type="checkbox"]){
+	display: flex;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+fieldset p > textarea{
+	display: flex;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+form{
+	padding: 20px;
+}
+
+legend{
+	font-weight: bold;
+	font-family: "Noto Sans";
+	display: flex;
+}
+

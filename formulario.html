@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+		<title>FORMULARIO</title>
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<header>
+			<hl>Formulario</hl>
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="horario.html">Horario</a>
+				<a href="formulario.html">Formulario</a>
+			</nav>
+		</header>
+        <main>
+        <h2>Formulario de contacto</h2>
+        <form>  
+            <fieldset>  
+                <legend>
+                    Preguntas de formulario * 
+                </legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+                </p>
+                <p>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Introduce tu contraseña" required>
+                </p>
+                <p>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Introduce tu teléfono" inputmode="numeric"
+                        maxlength="9" pattern="[0-9]{9}" required
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 9)">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Fechas y horas
+                </legend>
+                <p>
+                    <label for="nacimiento">Fecha de nacimiento*:</label>
+                    <input type="date" id="nacimiento" name="nacimiento" >
+                </p>
+                <p>
+                    <label for="hora">Hora*:</label>
+                    <input type="time" id="hora" name="hora" >
+                </p>
+                <p>
+                    <label for="fechaHora">Fecha y hora*:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" >
+                </p>
+                <p>
+                    <label for="mes">Mes*:</label>
+                    <input type="month" id="mes" name="mes" >
+                </p>
+                <p>
+                    <label for="semana">Semana*:</label>
+                    <input type="week" id="semana" name="semana" >
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Información adicional
+                </legend>
+                <p>
+                    <label for="sexo">Sexo*:</label>
+                    <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="otro" name="sexo" value="otro">
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="noespecificado" name="sexo" value="noespecificado">
+                    <label for="noespecificado">No especificado</label>
+                </p>
+                <p>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea> 
+                </p>
+            <fieldset>
+          <legend>Valores numéricos</legend>
+
+          <!-- NUMBER -->
+          <p>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" placeholder="Introduce tu edad" inputmode="numeric"
+                        maxlength="3" pattern="[0-9]{1,3}" required
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)">
+          </p>
+
+          <!-- RANGE -->
+          <p>
+            <label for="valor">Nivel:</label>
+            <input type="range" id="valor" name="valor" min="0" max="100">
+          </p>
+
+          <!-- COLOR -->
+          <p>
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color">
+          </p>
+        </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Consentimiento
+                </legend>
+                <p>
+                    <label for="terminos">Acepto los términos y condiciones*:</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </p>
+            </fieldset>
+        </form>
+        </main>
+		<footer>
+			<p>Jaime Luján Trenado</p>
+			<p>Contacto: <a href="mailto::lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a>
+		</footer>
+	</body>
+</html>
