@@ -91,22 +91,16 @@
                 </p>
             <fieldset>
           <legend>Valores numéricos</legend>
-
-          <!-- NUMBER -->
           <p>
             <label for="edad">Edad:</label>
             <input type="text" id="edad" name="edad" placeholder="Introduce tu edad" inputmode="numeric"
                         maxlength="3" pattern="[0-9]{1,3}" required
                         oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)">
           </p>
-
-          <!-- RANGE -->
           <p>
             <label for="valor">Nivel:</label>
             <input type="range" id="valor" name="valor" min="0" max="100">
           </p>
-
-          <!-- COLOR -->
           <p>
             <label for="color">Color favorito:</label>
             <input type="color" id="color" name="color">
