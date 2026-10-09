@@ -1,0 +1,46 @@
+/*horario*/
+table{
+	width: 100%;
+	margin: 10px 0px 10px;
+	table-layout: fixed;
+	padding: 5px;
+	
+}
+thead{
+	background-color: #70664F;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	table-layout: fixed;
+}
+
+tbody{
+	background-color: #4F7066;
+	align-items: center;
+	text-align: center;
+	table-layout: fixed;
+
+}
+tr{
+	height: 80px;
+	font-size: clamp(16px, 1.5vw, 30px);
+	word-break: break-word;
+}
+
+td a { /* quitar decoración de hipervinculos en la tabla */
+    color: #000000;
+    padding: 10px;
+}
+
+/* clase por asignatura */
+.PROGRAMACION {background-color: #E38A8A;}
+.PROYECTO {background-color: #D18AE3;}
+.SISTEMAS {background-color: #E3DF8A;}
+.DIGITALIZACION {background-color: #8AE3B2;}
+.MARCAS {background-color: #8D8AE3;}
+.INGLES {background-color: #7C729C;}
+.BASE {background-color: #E3B28A;}
+.IPE {background-color: #ABE38A;}
+.SOSTENIBILIDAD {background-color: #E38AB7;}
+.RECREO {background-color: #CFFACF;}
+.ENTORNOS {background-color: #8AE3DA;}

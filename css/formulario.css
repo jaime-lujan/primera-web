@@ -1,0 +1,33 @@
+
+fieldset{
+	border: 2px solid #44534f;
+	background: #cfe8eb;
+	padding: 1rem;
+	font-size: 20px;
+	font-family: "Noto Sans";
+    align-items: center;
+    gap: 10px;
+}
+
+fieldset p > input:not([type="radio"]):not([type="checkbox"]){
+	display: flex;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+fieldset p > textarea{
+	display: flex;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+form{
+	padding: 20px;
+}
+
+legend{
+	font-weight: bold;
+	font-family: "Noto Sans";
+	display: flex;
+}
+

@@ -1,0 +1,45 @@
+h1{
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+#horizontal {
+    background-color: #84815b;
+    padding: 15px;
+    margin-right: 20px;
+    gap: 30px;
+}
+
+hr{
+    height: 2px;
+    background-color: #515151;
+
+}
+
+#vertical {
+    flex-direction: column;
+    width: 20%;
+    margin-left: -40px;
+}
+
+.rojo {
+    background-color: red;
+    padding: 15px;
+}
+
+.verde{
+    background-color: #71e83a;
+    padding: 15px;    
+}
+main{
+    margin-left: 5px;
+}
+
+body{
+    border: 1px blue solid;
+}

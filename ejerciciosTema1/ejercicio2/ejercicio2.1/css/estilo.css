@@ -1,0 +1,33 @@
+h1 {
+    background-color: #6cdaf5;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.listanoordenada {
+    list-style-type: circle;
+    border-bottom: 2px #484848 solid;
+    padding-bottom: 20px;
+}
+
+.listaordenada {
+    border-bottom: 2px #484848 solid;
+    padding-bottom: 20px;
+}
+
+.cuadrados {
+    list-style-type: square;
+}
+
+
+.letras {
+    list-style-type: lower-alpha;
+}
+
+.letras2 {
+    list-style-type: lower-roman;
+}
