@@ -1,3 +1,10 @@
+main{
+    margin-left: 5px;
+}
+
+body{
+    border: 1px blue solid;
+}
 h1{
     font-size: 16px;
 }
@@ -23,23 +30,17 @@ hr{
 
 #vertical {
     flex-direction: column;
-    width: 20%;
     margin-left: -40px;
+    li{
+        padding:15px;
+        margin-right: 80%;
+    }
+    .rojo {
+        background-color: red;
+    }
+
+    .verde{
+        background-color: #71e83a;  
+    }
 }
 
-.rojo {
-    background-color: red;
-    padding: 15px;
-}
-
-.verde{
-    background-color: #71e83a;
-    padding: 15px;    
-}
-main{
-    margin-left: 5px;
-}
-
-body{
-    border: 1px blue solid;
-}

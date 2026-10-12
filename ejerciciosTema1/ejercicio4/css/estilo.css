@@ -1,0 +1,43 @@
+q {
+    font-style: italic;
+}
+
+#JUAN {
+    text-align: center;
+    a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 200px;
+        text-decoration: none;
+        color:  #cc0000;
+    }
+}
+
+hr{
+    background-color: #b5b5b5;
+}
+
+#formPag5{
+    fieldset{
+    border: none;
+    }
+    h1, .botones {
+        margin-left: 15px;
+    }
+
+    h1{
+        margin-bottom: 0px;
+    }
+}
+
+#paginaFinal {
+    display: flex;
+    justify-content: center;
+    div{
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 3px solid black;
+        font-size: 32px;
+        font-weight: bold;
+    }
+} 

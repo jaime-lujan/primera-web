@@ -14,20 +14,19 @@ h1 {
     padding-bottom: 20px;
 }
 
-.listaordenada {
-    border-bottom: 2px #484848 solid;
-    padding-bottom: 20px;
-}
-
 .cuadrados {
     list-style-type: square;
 }
 
+.listaordenada {
+    border-bottom: 2px #484848 solid;
+    padding-bottom: 20px;
+    .letras {
+        list-style-type: lower-alpha;
+    }
 
-.letras {
-    list-style-type: lower-alpha;
+    .letras2 {
+        list-style-type: lower-roman;
+    }
 }
 
-.letras2 {
-    list-style-type: lower-roman;
-}

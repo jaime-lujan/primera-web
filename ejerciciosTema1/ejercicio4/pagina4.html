@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cambio de nombre</title>
+		<link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <main>
+            <form action="pagina5.html" id="formPag5">  
+                <h1>Bienvenido al formulario de cambio de nombre</h1>
+                <fieldset>
+                    <p>
+                        <label for="gustoNombre">¿Te gusta tu nombre? (elige solo una opción)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="Si" name="gustoNombre" value="Si">
+                        <label for="hombre">Si</label>
+                        <input type="radio" id="No" name="gustoNombre" value="No">
+                        <label for="mujer">No</label>
+                        <input type="radio" id=Nunca" name="gustoNombre" value="Nunca">
+                        <label for="otro">Nunca lo he pensado</label>
+                    </p>
+                    <p>
+                        Selecciona el nombre que te quieres poner:
+                        <select id="nombreNuevo" name="nombreNuevo">
+                            <optgroup label="Hombre">
+                                <option value="manolo">Manolo</option>
+                                <option value="antonio">Antonio</option>
+                                <option value="lucas">Lucas</option>
+                            </optgroup>
+
+                            <optgroup label="Mujer">
+                                <option value="paula">Paula</option>
+                                <option value="lucia">Lucia</option>
+                                <option value="andrea">Andrea</option>
+                            </optgroup>
+                                <option value="otro">Otro</option>                     
+                            </select>
+                    </p>
+                    <p>
+                        En caso de querer otro nombre, escríbelo aquí:
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    </p>
+                    <p>
+                        <label for="valor">Valora tu experiencia</label>
+                        <br>
+                        <input type="range" id="valor" name="valor" min="0" max="100">
+                    </p>                    
+                </fieldset>
+                    <div class="botones">                
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Restablecer</button>
+                    </div>
+            </form> 
+        </main>
+    </body>
+</html>

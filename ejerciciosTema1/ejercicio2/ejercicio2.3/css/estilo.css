@@ -1,3 +1,7 @@
+main{
+  padding-bottom: 15px;
+}
+
 div {
   margin-top: 20px;
   margin-left: 15px;
@@ -5,16 +9,11 @@ div {
   padding: 15px;
 }
 
-
-#div1 {
+#divSup {
   background-color: #6b7886d0; 
   color: white;
 }
 
-#div2 {
+#divInf {
   background-color: #e7e4bac9; 
-}
-
-main{
-  padding-bottom: 15px;
 }

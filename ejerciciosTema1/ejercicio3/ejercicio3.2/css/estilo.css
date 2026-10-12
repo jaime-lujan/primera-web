@@ -1,0 +1,27 @@
+#websArriba{
+    display: flex;
+    margin-bottom: 50px;
+    iframe{    
+    width: 50%;
+    height: 300px;
+}
+
+}
+
+.botones {
+    background-color: #44f66a;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#websAbajo{
+    display: flex;
+    margin-top: 50px;
+    iframe{    
+    width: 50%;
+    height: 300px;
+}
+
+}
