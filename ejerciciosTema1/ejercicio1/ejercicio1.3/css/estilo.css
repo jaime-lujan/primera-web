@@ -1,5 +1,4 @@
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -9,13 +8,11 @@ caption {
 }
 
 .table1 {
-    border-collapse: collapse;
-    border: 2px blue solid;
+    border: 2px solid blue ;
     border-spacing: 5px;
-    border-collapse: separate;
     padding: 13px;
     td{
-        border: 2px blue solid;
+        border: 2px solid blue ;
         padding: 15px;
     }
 }
@@ -23,15 +20,10 @@ caption {
 .table2 {
     margin-top: 20px;
     border-collapse: collapse;
-    border: 2px #e2be08 solid;
+    border: 2px solid#e2be08 ;
     background-color: #dcdcdc;
-    th{
-        border: 2px #e2be08 solid;
-        text-align: center;
-        padding: 18px;
-    }
-    td{
-        border: 2px #e2be08 solid;
+    th , td{
+        border: 2px solid#e2be08 ;
         text-align: center;
         padding: 18px;
     }

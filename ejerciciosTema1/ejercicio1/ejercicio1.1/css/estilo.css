@@ -1,34 +1,33 @@
 body{
     border: 2px blue solid;
-}
+    h2{
+        color: #ff0000;
+        font-style: italic;
+    }
 
-h2{
-    color: #ff0000;
-    font-style: italic;
-}
+    p{
+        font-size: 30px;
+        font-family: Verdana;
+    }
 
-p{
-    font-size: 30px;
-    font-family: Verdana;
-}
+    .subrayado {
+        background-color: yellow;
+    }
 
-.subrayado {
-    background-color: yellow;
-}
-
-.cuaderno {
-    display: block;
-    margin: auto;
+    .cuaderno {
+        display: block;
+        margin: auto;
+    }
 }
 
 footer{
     border-top: 2px solid #5f5f5f ;
     margin: 5px;
+    .pie{
+        font-size: 15px;
+        border: 2px solid blue ;
+        background-color: #DCDCDC;
+        font-family: times new roman;
+    }
 }
 
-.pie{
-    font-size: 15px;
-    border: 2px solid blue ;
-    background-color: #DCDCDC;
-    font-family: times new roman;
-}
