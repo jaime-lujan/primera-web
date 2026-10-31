@@ -1,16 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PIEDRA PAPEL TIJERA</title>
-    <script src="js/piedrapapeltijera.js" defer></script>
-    <link rel="icon" type="image/png" href="../imagenes/icon.png" />
-    <link rel="stylesheet" href="../css/estilo.css" />
-    <link rel="stylesheet" href="../css/piedrapapeltijera.css" />
-  </head>
-
-  <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PIEDRA PAPEL TIJERA</title>
+		<script src="js/piedrapapeltijera.js" defer></script>
+		<link rel="icon" type="image/png" href="../imagenes/icon.png" />
+		<link rel="stylesheet" href="../css/estilo.css" />
+		<link rel="stylesheet" href="../css/piedrapapeltijera.css" />
+	</head>
+  	<body>
 		<header>
 			<div>
 			<h1>Mi Primera WEB</h1>
@@ -66,42 +65,43 @@
 			</div>
 			</nav>
 		</header>
-    <main>
-      <h1>Piedra, papel o tijera</h1>
-      <div class="opcionesJ">
-        <div class="piedra">
-          <button type="button" onclick="jugar('piedra')">piedra</button>
-          <img class="foto" src="img/piedra.svg" alt="Piedra" />
-        </div>
-        <div class="papel">
-          <button type="button" onclick="jugar('papel')">papel</button>
-          <img class="foto" src="img/papel.svg" alt="Papel" />
-        </div>
-        <div class="tijera">
-          <button type="button" onclick="jugar('tijera')">tijera</button>
-          <img class="foto" src="img/tijera.svg" alt="Tijera" />
-        </div>
-      </div>
 
-      <div class="estadisticas">
-        <p id="marcador">Partidas jugadas: 0</p>
-        <p id="ganadas">Ganadas: 0</p>
-        <p id="empatadas">Empates: 0</p>
-        <p id="perdidas">Derrotas: 0</p>
-      </div>
+		<main>
+			<h1>Piedra, papel o tijera</h1>
+			<div class="opcionesJ">
+				<div class="piedra" type="button" onclick="jugar('piedra')">
+					<button>piedra</button>
+					<img class="foto" src="img/piedra.svg" alt="Piedra" />
+				</div>
+				<div class="papel" type="button" onclick="jugar('papel')">
+					<button>papel</button>
+					<img class="foto" src="img/papel.svg" alt="Papel" />
+				</div>
+				<div class="tijera" type="button" onclick="jugar('tijera')">
+					<button>tijera</button>
+					<img class="foto" src="img/tijera.svg" alt="Tijera" />
+				</div>
+			</div>
 
-      <section id="resultado">
-        <h2>Resultado</h2>
-        <p id="jugada-jugador">Tu jugada aparecerá aquí</p>
-        <p id="jugada-maquina">La jugada de la maquina aparecerá aquí</p>
-        <p id="mensaje"></p>
-      </section>
-    </main>
+			<div class="estadisticas">
+				<p id="marcador">Partidas jugadas: 0</p>
+				<p id="ganadas">Ganadas: 0</p>
+				<p id="empatadas">Empates: 0</p>
+				<p id="perdidas">Derrotas: 0</p>
+			</div>
 
-    <footer>
-      <p>Jaime Luján Trenado</p>
-      <p>Contacto:<a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a></p>
-    </footer>
+			<section id="resultado">
+				<h2>Resultado</h2>
+				<p id="jugada-jugador">Tu jugada aparecerá aquí</p>
+				<p id="jugada-maquina">La jugada de la maquina aparecerá aquí</p>
+				<p id="mensaje"></p>
+			</section>
+		</main>
+
+		<footer>
+			<p>Jaime Luján Trenado</p>
+			<p>Contacto:<a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a></p>
+		</footer>
 
   </body>
 </html>

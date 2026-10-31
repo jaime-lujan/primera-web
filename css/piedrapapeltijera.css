@@ -36,11 +36,17 @@ main h1 {
 	transition: filter 0.3s;
 }
 
-.opcionesJ button:hover {
-	filter: brightness(1.5);
+.opcionesJ div {
+	transition: filter 0.3s;
+	cursor: pointer;
 }
 
-.opcionesJ button:active {
+.opcionesJ div:hover {
+	filter: brightness(1.10);
+	transform: scale(1.05);
+}
+
+.opcionesJ div:active {
 	transform: scale(0.95);
 }
 
