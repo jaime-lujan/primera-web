@@ -1,0 +1,111 @@
+/* ---------- Piedra, papel o tijera ---------- */
+main h1 {
+	text-align: center;
+}
+
+/* las 3 opciones, siempre en una fila y del mismo tamaño */
+.opcionesJ {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 15px;
+	max-width: 700px;
+	margin: 20px auto;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		padding: 15px;
+		background-color: #56787B;
+		border-radius: 20px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.opcionesJ button {
+	width: 100%;
+	padding: 10px;
+	font-family: inherit;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #1D292A;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: filter 0.3s;
+}
+
+.opcionesJ button:hover {
+	filter: brightness(1.5);
+}
+
+.opcionesJ button:active {
+	transform: scale(0.95);
+}
+
+.foto {
+	width: 100%;
+	max-width: 150px;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+}
+
+/* marcador */
+.estadisticas {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 10px;
+	max-width: 700px;
+	margin: 20px auto;
+
+	p {
+		margin: 0;
+		padding: 8px 10px;
+		text-align: center;
+		color: #ffffff;
+		background-color: #1D292A;
+		border-radius: 30px;
+	}
+}
+
+/* resultado de la partida */
+#resultado {
+	max-width: 700px;
+	margin: 20px auto;
+	padding: 10px 20px 20px;
+	text-align: center;
+	background-color: #56787B;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+	h2 {
+		border-bottom: none;
+	}
+}
+
+#mensaje {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 10px 0px 0px;
+}
+
+/* pantallas pequeñas */
+@media (max-width: 700px) {
+	.opcionesJ {
+		gap: 8px;
+
+		div {
+			padding: 8px;
+		}
+	}
+
+	.opcionesJ button {
+		font-size: 14px;
+		padding: 8px 2px;
+	}
+
+	.estadisticas {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}

@@ -1,97 +1,249 @@
+/* ---------- Base ---------- */
+* {
+	box-sizing: border-box;
+}
 
-/* header generico */
+html {
+	background-color: #1D292A;
+}
+
+body {
+	margin: 0;
+	padding: 20px;
+	font-family: "Noto Sans", Arial, sans-serif;
+	color: #1D292A;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ---------- Header genérico ---------- */
 header {
 	background: #56787B;
 	color: black;
-	padding: 10px 30px;
+	padding: 15px 30px;
 	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
-	box-shadow: 0 2px 6px rgba (0, 0, 5, 0.4);
+	align-items: flex-start;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 	font-size: 25px;
-	font-family: "Noto Sans";
 	border-top-left-radius: 50px;
-	hl{ /* titulo header */
-		font-size: 45px;
+	border-bottom-right-radius: 20px;
+
+	div { /* cada bloque: título + menú */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	/* título del header*/
+	h1{
+		display: block;
+		font-size: 40px;
 		font-weight: bold;
-		margin: 15px;
+		margin: 5px;
+	}
+
+	h2 {
+		display: block;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 5px;
 	}
 }
 
-/* barra de navegación */
+/* ---------- Barra de navegación general ---------- */
 nav {
-    display: flex;
-    gap: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
 	background-color: #0000005b;
 	border-radius: 30px;
 	padding: 5px;
-	a { /* quitar decoración de hipervinculos en el nav */
+
+	a { /* quitar decoración de hipervínculos en el nav */
 		text-decoration: none;
 		color: #ffffff;
-		padding: 10px;
+		font-size: 20px;
+		padding: 8px 14px;
+		border-radius: 20px;
+		transition: background-color 0.3s;
+	}
+
+	a:hover {
+		background-color: #ffffff40;
 	}
 }
 
-.menuEjercicios{
-		display:flex;
-		flex-direction: column;
+/* ---------- Menú de ejercicios ---------- */
+.menuEjercicios {
+	flex-direction: column;
+	border-radius: 20px;
+
 	.desplegable {
 		position: relative;
-		display: inline-block;
-		.opciones { /* ocultar y editar opciones*/
-			display: none; 
+		display: block;
+
+		.opciones { /* ocultar y editar opciones */
+			display: none;
 			position: absolute;
-			top: 0%; 
+			top: 0;
 			right: 100%;
-			background-color: #000000bd;
-			box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+			background-color: #000000e0;
+			border-radius: 15px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 			min-width: 100px;
+			padding: 5px;
+			white-space: nowrap;
 			z-index: 10;
-		}	
+		}
 	}
-	/* mostrar opciones al pasar el ratón por el desplegable*/
-	.desplegable:hover .opciones { 
+
+	/* ---------- mostrar opciones al pasar el ratón por el desplegable ---------- */
+
+	.desplegable:hover > .opciones {
 		display: block;
 	}
 
-	.desplegable .opciones a { 
+	.desplegable .opciones a {
 		display: block;
 		padding: 8px 12px;
 	}
 }
 
-body{
-	background-color: #1D292A;
-}
-
-main{
+/* ---------- Contenido principal ---------- */
+main {
 	background-color: #84A6A9;
 	width: 100%;
-	margin: 10px 0px 10px;
+	margin: 20px 0px;
+	padding: 20px 30px;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	line-height: 1.6;
+	overflow-wrap: break-word;
+
+	h1, h2 {
+		color: #0f1a1b;
+		border-bottom: 2px solid #56787B;
+		padding-bottom: 5px;
+	}
+
+	a {
+		color: #0f1a1b;
+		font-weight: bold;
+	}
+
+	a:hover {
+		color: #ffffff;
+	}
 }
 
+.tituloli {
+	font-size: 20px;
+	font-weight: bold;
+	list-style: none;
+	margin-left: -20px;
+	margin-bottom: -20px;
+}
 
-/* foto */
-.zorro {width: 25%}
+/* ---------- Fotos ---------- */
+.fotos {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 5px;
 
+	figure {
+		margin: 0;
+		text-align: center;
+	}
 
-/* footer generico */
+	img {
+		width: 70%;
+		border-radius: 20px;
+		border: 4px solid #56787B;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	}
+
+	figcaption {
+		margin-top: 8px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+
+/* ---------- Footer genérico ---------- */
 footer {
 	background: #56787B;
 	color: black;
-	padding: 5px 20px;
+	padding: 5px 30px;
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
 	align-items: center;
-	box-shadow: 0 2px 6px rgba (0, 0, 5, 0.4);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 	font-size: 20px;
-	font-family: "Noto Sans";
+	border-top-left-radius: 20px;
 	border-bottom-right-radius: 50px;
+	flex-wrap: wrap;
+	gap: 5px 20px;
+	overflow-wrap: anywhere;
+
 	a {
 		text-decoration: underline;
 		color: #ffffff;
 		font-size: 15px;
+	}
+
+	a:hover {
+		color: #1D292A;
+	}
+}
+
+
+@media (max-width: 700px) {
+	body {
+		padding: 10px;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+		border-top-left-radius: 30px;
+	}
+
+	header hl, header h2 {
+		font-size: 28px;
+	}
+
+	nav a {
+		font-size: 16px;
+		padding: 6px 10px;
+	}
+
+	main {
+		padding: 15px;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+		border-bottom-right-radius: 30px;
+	}
+
+	/* desplegables: se abren hacia abajo en vez de a la izquierda */
+	.menuEjercicios .desplegable .opciones {
+		position: static;
+		box-shadow: none;
+	}
+
+	.fotos {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }

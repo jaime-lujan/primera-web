@@ -1,33 +1,96 @@
 
-fieldset{
-	border: 2px solid #44534f;
-	background: #cfe8eb;
-	padding: 1rem;
+form {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+main h2 {
+	text-align: center;
+}
+
+fieldset {
+	text-align: center;
+	background: #56787B;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	padding: 15px 25px 20px;
+	margin-bottom: 20px;
+	min-width: 0; 
 	font-size: 20px;
-	font-family: "Noto Sans";
-    align-items: center;
-    gap: 10px;
+
+	/* fieldset dentro de otro fieldset:*/
+	fieldset {
+		background: #6a8f93;
+		margin: 15px 0px 0px;
+	}
 }
 
-fieldset p > input:not([type="radio"]):not([type="checkbox"]){
-	display: flex;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-fieldset p > textarea{
-	display: flex;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-form{
-	padding: 20px;
-}
-
-legend{
+legend {
+	background-color: #1D292A;
+	color: #ffffff;
 	font-weight: bold;
-	font-family: "Noto Sans";
-	display: flex;
+	font-size: 20px;
+	padding: 6px 20px;
+	border-radius: 30px;
 }
 
+label {
+	font-weight: bold;
+}
+
+input, textarea, button {
+	font-family: inherit;
+	font-size: 18px;
+}
+
+fieldset p > input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]),
+fieldset p > textarea {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	margin-top: 5px;
+	padding: 8px 12px;
+	background-color: #cfe8eb;
+	border: 2px solid #1D292A;
+	border-radius: 12px;
+	transition: background-color 0.3s;
+}
+
+fieldset p > textarea {
+	max-width: 450px;
+	resize: vertical;
+}
+
+input:focus, textarea:focus {
+	background-color: #ffffff;
+	outline: 3px solid #ffffff80;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="range"] {
+	accent-color: #1D292A;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+button {
+	background-color: #1D292A;
+	color: #ffffff;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 25px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0000005b;
+}
