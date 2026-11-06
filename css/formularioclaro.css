@@ -1,0 +1,95 @@
+form {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+main h2 {
+	text-align: center;
+}
+
+fieldset {
+	text-align: center;
+	background: #8FB0B3;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+	padding: 15px 25px 20px;
+	margin-bottom: 20px;
+	min-width: 0; 
+	font-size: 20px;
+
+	/* fieldset dentro de otro fieldset:*/
+	fieldset {
+		background: #A6C3C6;
+		margin: 15px 0px 0px;
+	}
+}
+
+legend {
+	background-color: #1D292A;
+	color: #DCE6E6;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 6px 20px;
+	border-radius: 30px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input, textarea, button {
+	font-family: inherit;
+	font-size: 18px;
+}
+
+fieldset p > input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]),
+fieldset p > textarea {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	margin-top: 5px;
+	padding: 8px 12px;
+	background-color: #E3ECEC;
+	border: 2px solid #1D292A;
+	border-radius: 12px;
+	transition: background-color 0.3s;
+}
+
+fieldset p > textarea {
+	max-width: 450px;
+	resize: vertical;
+}
+
+input:focus, textarea:focus {
+	background-color: #F2F6F6;
+	outline: 3px solid #1D292A66;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="range"] {
+	accent-color: #1D292A;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+button {
+	background-color: #1D292A;
+	color: #DCE6E6;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 25px;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #3F5557;
+}

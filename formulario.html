@@ -1,182 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>FORMULARIO</title>
-    	<link rel="icon" type="image/png" href="imagenes/icon.png">        
-		<link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/formulario.css">
-	</head>
-	<body>
-		<header>
-			<div>
-			<h1>Mi Primera WEB</h1>
-            <!-- MENU PRINCIPAL-->
-			<nav class="menuPrincipal">
-				<a href="index.html">Inicio</a>
-				<a href="horario.html">Horario</a>
-				<a href="formulario.html">Formulario</a>
-				<a target="_blank" href="https://github.com/jaime-lujan">GitHub</a>
-			</nav>
-			</div>
-			<div>
-			<h2>Ejercicios</h2>
-            <!-- MENU EJERCICIOS -->
-			<nav class="menuEjercicios">
-			<!-- DESPLEGABLE TEMA 1 Y 2 -->
-			<div class="desplegable">
-				<a href="#">Ejercicios Tema 1 y 2</a>
-				<div class="opciones">
-					<div class="desplegable">
-						<a href="#">1 Formato de Texto</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.1/index.html">1.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.2/index.html">1.2</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.3/index.html">1.3</a>
-						</div>
-					</div>
-					<div class="desplegable">
-						<a href="#">2 Listas bloques</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.1/index.html">2.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.2/index.html">2.2</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.3/index.html">2.3</a>
-						</div>
-					</div>
-					<div class="desplegable">
-						<a href="#">3 Etiquetas class, id y iframe</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.1/index.html">3.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.2/index.html">3.2</a>
-						</div>
-					</div>
-					<a href="ejerciciosTema1y2/ejercicio4/index.html">4 General</a>
-				</div>
-			</div>
-            <!-- DESPLEGABLE TEMA 3-->
-			<div class="desplegable">
-				<a href="#">Ejercicios Tema 3</a>
-				<div class="opciones">
-					<a href="ejerciciosTema3/calculadora.html">Calculadora</a>
-					<a href="ejerciciosTema3/piedrapapeltijera.html">Piedra Papel o Tijera</a>
-				</div>
-			</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera WEB</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloclaro.css" class="tema-claro">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/formularioclaro.css" class="tema-claro">
+    <script src="js/cambiamodo.js"></script>
+  </head>
+  <body>
+     <header>
+      <button
+        id="botonModo"
+        onclick="cambiarModo()"
+      >
+        <img src="imagenes/botonmodo.svg" alt="" draggable="false" />
+      </button>
+      <div>
+        <h1>Mi Primera WEB</h1>
+        <!-- MENU PRINCIPAL-->
+        <nav class="menuPrincipal">
+          <a href="index.html">Inicio</a>
+          <a href="horario.html">Horario</a>
+          <a href="formulario.html">Formulario</a>
+          <a target="_blank" href="https://github.com/jaime-lujan">GitHub</a>
+        </nav>
+      </div>
+      <div>
+        <h2>Ejercicios</h2>
+        <!-- MENU EJERCICIOS -->
+        <nav class="menuEjercicios">
+          <!-- DESPLEGABLE TEMA 1 Y 2 -->
+          <div class="desplegable">
+            <a href="#">Ejercicios Tema 1 y 2</a>
+            <div class="opciones">
+              <div class="desplegable">
+                <a href="#">1 Formato de Texto</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.1/index.html">1.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.2/index.html">1.2</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.3/index.html">1.3</a>
+                </div>
+              </div>
+              <div class="desplegable">
+                <a href="#">2 Listas bloques</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.1/index.html">2.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.2/index.html">2.2</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.3/index.html">2.3</a>
+                </div>
+              </div>
+              <div class="desplegable">
+                <a href="#">3 Etiquetas class, id y iframe</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.1/index.html">3.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.2/index.html">3.2</a>
+                </div>
+              </div>
+              <a href="ejerciciosTema1y2/ejercicio4/index.html">4 General</a>
+            </div>
+          </div>
+          <!-- DESPLEGABLE TEMA 3-->
+          <div class="desplegable">
+            <a href="#">Ejercicios Tema 3</a>
+            <div class="opciones">
+              <a href="ejerciciosTema3/calculadora.html">Calculadora</a>
+              <a href="ejerciciosTema3/piedrapapeltijera.html">Piedra Papel o Tijera</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-        <main>
-        <h2>Formulario de contacto</h2>
-        <form>  
-            <fieldset>  
-                <legend>
-                    Preguntas de formulario * 
-                </legend>
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
-                </p>
-                <p>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
-                </p>
-                <p>
-                    <label for="pass">Contraseña:</label>
-                    <input type="password" id="pass" name="pass" placeholder="Introduce tu contraseña" required>
-                </p>
-                <p>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
-                </p>
-                <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" id="telefono" name="telefono" placeholder="Introduce tu teléfono" inputmode="numeric"
-                        maxlength="9" pattern="[0-9]{9}" required
-                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 9)">
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    Fechas y horas
-                </legend>
-                <p>
-                    <label for="nacimiento">Fecha de nacimiento:</label>
-                    <input type="date" id="nacimiento" name="nacimiento" >
-                </p>
-                <p>
-                    <label for="hora">Hora:</label>
-                    <input type="time" id="hora" name="hora" >
-                </p>
-                <p>
-                    <label for="fechaHora">Fecha y hora:</label>
-                    <input type="datetime-local" id="datetime" name="datetime" >
-                </p>
-                <p>
-                    <label for="mes">Mes:</label>
-                    <input type="month" id="mes" name="mes" >
-                </p>
-                <p>
-                    <label for="semana">Semana:</label>
-                    <input type="week" id="semana" name="semana" >
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    Información adicional
-                </legend>
-                <p>
-                    <label for="sexo">Sexo*:</label>
-                    <input type="radio" id="hombre" name="sexo" value="hombre" required>
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="mujer" name="sexo" value="mujer">
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" id="otro" name="sexo" value="otro">
-                    <label for="otro">Otro</label>
-                    <input type="radio" id="noespecificado" name="sexo" value="noespecificado">
-                    <label for="noespecificado">No especificado</label>
-                </p>
-                <p>
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea> 
-                </p>
-            <fieldset>
-          <legend>Valores numéricos</legend>
+    <main>
+      <h2>Formulario de contacto</h2>
+      <form>
+        <fieldset>
+          <legend>Preguntas de formulario *</legend>
           <p>
-            <label for="edad">Edad:</label>
-            <input type="text" id="edad" name="edad" placeholder="Introduce tu edad" inputmode="numeric"
-                        maxlength="3" pattern="[0-9]{1,3}" required
-                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Introduce tu nombre"
+              required
+            />
           </p>
           <p>
-            <label for="valor">Nivel:</label>
-            <input type="range" id="valor" name="valor" min="0" max="100">
+            <label for="apellidos">Apellidos:</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Introduce tus apellidos"
+              required
+            />
           </p>
           <p>
-            <label for="color">Color favorito:</label>
-            <input type="color" id="color" name="color">
+            <label for="pass">Contraseña:</label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              placeholder="Introduce tu contraseña"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu correo electrónico"
+              required
+            />
+          </p>
+          <p>
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="text"
+              id="telefono"
+              name="telefono"
+              placeholder="Introduce tu teléfono"
+              inputmode="numeric"
+              maxlength="9"
+              pattern="[0-9]{9}"
+              required
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 9)"
+            />
           </p>
         </fieldset>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    Consentimiento
-                </legend>
-                <p>
-                    <label for="terminos">Acepto los términos y condiciones*:</label>
-                    <input type="checkbox" id="terminos" name="terminos" required>
-                </p>
-                <p>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
-                </p>
-            </fieldset>
-        </form>
-        </main>
+        <fieldset>
+          <legend>Fechas y horas</legend>
+          <p>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" />
+          </p>
+          <p>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" />
+          </p>
+          <p>
+            <label for="fechaHora">Fecha y hora:</label>
+            <input type="datetime-local" id="datetime" name="datetime" />
+          </p>
+          <p>
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes" />
+          </p>
+          <p>
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Información adicional</legend>
+          <p>
+            <label for="sexo">Sexo*:</label>
+            <input
+              type="radio"
+              id="hombre"
+              name="sexo"
+              value="hombre"
+              required
+            />
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer" />
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="otro" name="sexo" value="otro" />
+            <label for="otro">Otro</label>
+            <input
+              type="radio"
+              id="noespecificado"
+              name="sexo"
+              value="noespecificado"
+            />
+            <label for="noespecificado">No especificado</label>
+          </p>
+          <p>
+            <label for="comentarios">Comentarios:</label>
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </p>
+          <fieldset>
+            <legend>Valores numéricos</legend>
+            <p>
+              <label for="edad">Edad:</label>
+              <input
+                type="text"
+                id="edad"
+                name="edad"
+                placeholder="Introduce tu edad"
+                inputmode="numeric"
+                maxlength="3"
+                pattern="[0-9]{1,3}"
+                required
+                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3)"
+              />
+            </p>
+            <p>
+              <label for="valor">Nivel:</label>
+              <input type="range" id="valor" name="valor" min="0" max="100" />
+            </p>
+            <p>
+              <label for="color">Color favorito:</label>
+              <input type="color" id="color" name="color" />
+            </p>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Consentimiento</legend>
+          <p>
+            <label for="terminos">Acepto los términos y condiciones*:</label>
+            <input type="checkbox" id="terminos" name="terminos" required />
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </p>
+        </fieldset>
+      </form>
+    </main>
 
-		<footer>
-			<p>Jaime Luján Trenado</p>
-			<p>Contacto: <a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a></p>
-		</footer>
 
-	</body>
+    <footer>
+      <p>Jaime Luján Trenado</p>
+      <p>
+        Contacto:
+        <a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a>
+      </p>
+    </footer>
+  </body>
 </html>

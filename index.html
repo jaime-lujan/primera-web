@@ -1,116 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mi Primera WEB</title>
-    	<link rel="icon" type="image/png" href="imagenes/icon.png">
-		<link rel="stylesheet" href="css/estilo.css" />
-	</head>
-	<body>
-		<header>
-			<div>
-			<h1>Mi Primera WEB</h1>
-            <!-- MENU PRINCIPAL-->
-			<nav class="menuPrincipal">
-				<a href="index.html">Inicio</a>
-				<a href="horario.html">Horario</a>
-				<a href="formulario.html">Formulario</a>
-				<a target="_blank" href="https://github.com/jaime-lujan">GitHub</a>
-			</nav>
-			</div>
-			<div>
-			<h2>Ejercicios</h2>
-            <!-- MENU EJERCICIOS -->
-			<nav class="menuEjercicios">
-			<!-- DESPLEGABLE TEMA 1 Y 2 -->
-			<div class="desplegable">
-				<a href="#">Ejercicios Tema 1 y 2</a>
-				<div class="opciones">
-					<div class="desplegable">
-						<a href="#">1 Formato de Texto</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.1/index.html">1.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.2/index.html">1.2</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.3/index.html">1.3</a>
-						</div>
-					</div>
-					<div class="desplegable">
-						<a href="#">2 Listas bloques</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.1/index.html">2.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.2/index.html">2.2</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.3/index.html">2.3</a>
-						</div>
-					</div>
-					<div class="desplegable">
-						<a href="#">3 Etiquetas class, id y iframe</a>
-						<div class="opciones">
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.1/index.html">3.1</a>
-							<a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.2/index.html">3.2</a>
-						</div>
-					</div>
-					<a href="ejerciciosTema1y2/ejercicio4/index.html">4 General</a>
-				</div>
-			</div>
-            <!-- DESPLEGABLE TEMA 3-->
-			<div class="desplegable">
-				<a href="#">Ejercicios Tema 3</a>
-				<div class="opciones">
-					<a href="ejerciciosTema3/calculadora.html">Calculadora</a>
-					<a href="ejerciciosTema3/piedrapapeltijera.html">Piedra Papel o Tijera</a>
-				</div>
-			</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera WEB</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloclaro.css" class="tema-claro">
+    <script src="js/cambiamodo.js"></script>
+  </head>
+  <body>
+    <header>
+      <button
+        id="botonModo"
+        onclick="cambiarModo()"
+      >
+        <img src="imagenes/botonmodo.svg" alt="" draggable="false" />
+      </button>
+      <div>
+        <h1>Mi Primera WEB</h1>
+        <!-- MENU PRINCIPAL-->
+        <nav class="menuPrincipal">
+          <a href="index.html">Inicio</a>
+          <a href="horario.html">Horario</a>
+          <a href="formulario.html">Formulario</a>
+          <a target="_blank" href="https://github.com/jaime-lujan">GitHub</a>
+        </nav>
+      </div>
+      <div>
+        <h2>Ejercicios</h2>
+        <!-- MENU EJERCICIOS -->
+        <nav class="menuEjercicios">
+          <!-- DESPLEGABLE TEMA 1 Y 2 -->
+          <div class="desplegable">
+            <a href="#">Ejercicios Tema 1 y 2</a>
+            <div class="opciones">
+              <div class="desplegable">
+                <a href="#">1 Formato de Texto</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.1/index.html">1.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.2/index.html">1.2</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio1/ejercicio1.3/index.html">1.3</a>
+                </div>
+              </div>
+              <div class="desplegable">
+                <a href="#">2 Listas bloques</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.1/index.html">2.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.2/index.html">2.2</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio2/ejercicio2.3/index.html">2.3</a>
+                </div>
+              </div>
+              <div class="desplegable">
+                <a href="#">3 Etiquetas class, id y iframe</a>
+                <div class="opciones">
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.1/index.html">3.1</a>
+                  <a target="_blank" href="ejerciciosTema1y2/ejercicio3/ejercicio3.2/index.html">3.2</a>
+                </div>
+              </div>
+              <a href="ejerciciosTema1y2/ejercicio4/index.html">4 General</a>
+            </div>
+          </div>
+          <!-- DESPLEGABLE TEMA 3-->
+          <div class="desplegable">
+            <a href="#">Ejercicios Tema 3</a>
+            <div class="opciones">
+              <a href="ejerciciosTema3/calculadora.html">Calculadora</a>
+              <a href="ejerciciosTema3/piedrapapeltijera.html">Piedra Papel o Tijera</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-		<main>
-			<h1>Jaime Luján Trenado</h1>
-			<p>
-				Estudiante de Desarrollo de Aplicaciones Web (<b>DAW</b>) en el CIFP Virgen de Gracia de <i>Puertollano</i>
-			</p>
+    <main>
+      <h1>Jaime Luján Trenado</h1>
+      <p>
+        Estudiante de Desarrollo de Aplicaciones Web (<b>DAW</b>) en el CIFP
+        Virgen de Gracia de <i>Puertollano</i>
+      </p>
 
-			<h2>Intereses</h2>
-			<ul>
-				<li class="tituloli"><p>Videojuegos</p></li>
-				<ul>
-					<li><a target="_blank" href="https://www.pokemon.com/es">Pokémon</a></li>
-					<li><a target="_blank" href="https://worldofwarcraft.blizzard.com/es-es/">World Of Warcraft</a></li>
-					<li><a target="_blank" href="https://animalcrossing.nintendo.com/es/">Animal Crossing</a></li>
-				</ul>
-				<li class="tituloli"><p>Música</p></li>
-					<ul>
-						<li><a target="_blank" href="https://open.spotify.com/intl-es/artist/1bAftSH8umNcGZ0uyV7LMg">Duki</a></li>
-						<li><a target="_blank" href="https://open.spotify.com/artist/378dH6EszOLFShpRzAQkVM">Lindsey Stirling</a></li>
-						<li><a target="_blank" href="https://open.spotify.com/artist/6pNgnvzBa6Bthsv8SrZJYl">Hatsune Miku</a></li>
-					</ul>
-			</ul>
+      <h2>Intereses</h2>
+      <ul>
+        <li class="tituloli">Videojuegos
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.pokemon.com/es">Pokémon</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://worldofwarcraft.blizzard.com/es-es/">World Of Warcraft</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://animalcrossing.nintendo.com/es/">Animal Crossing</a>
+          </li>
+		  </li>
+        </ul>
+        <li class="tituloli">Música
+        <ul>
+          <li>
+            <a target="_blank" href="https://open.spotify.com/intl-es/artist/1bAftSH8umNcGZ0uyV7LMg">Duki</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://open.spotify.com/artist/378dH6EszOLFShpRzAQkVM">Lindsey Stirling</a>
+          </li>
+          <li>
+            <a target="_blank"  href="https://open.spotify.com/artist/6pNgnvzBa6Bthsv8SrZJYl">Hatsune Miku</a>
+          </li>
+		  </li>
+        </ul>
+      </ul>
 
-			<h2>Mis gatos</h2>
-			<div class="fotos">
-				<figure>
-					<img src="imagenes/Milo.jpeg" alt="Milo">
-					<figcaption>Milo</figcaption>
-				</figure>
-				<figure>
-					<img src="imagenes/Lyn.jpeg" alt="Foto de Lyn">
-					<figcaption>Lyn</figcaption>
-				</figure>
-				<figure>
-					<img src="imagenes/Nala.jpeg" alt="Nala">
-					<figcaption>Nala</figcaption>
-				</figure>
-				<figure>
-					<img src="imagenes/Yuna.jpeg" alt="Yuna">
-					<figcaption>Yuna</figcaption>
-				</figure>
-			</div>
-		</main>
+      <h2>Mis gatos</h2>
+      <div class="fotos">
+        <figure>
+          <img src="imagenes/Milo.jpeg" alt="Milo" />
+          <figcaption>Milo</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/Lyn.jpeg" alt="Foto de Lyn" />
+          <figcaption>Lyn</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/Nala.jpeg" alt="Nala" />
+          <figcaption>Nala</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/Yuna.jpeg" alt="Yuna" />
+          <figcaption>Yuna</figcaption>
+        </figure>
+      </div>
+    </main>
 
-		<footer>
-			<p>Jaime Luján Trenado</p>
-			<p>Contacto: <a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a></p>
-		</footer>
-
-	</body>
+    <footer>
+      <p>Jaime Luján Trenado</p>
+      <p>
+        Contacto:
+        <a href="mailto:lujantrenadojaime@gmail.com">lujantrenadojaime@gmail.com</a>
+      </p>
+    </footer>
+  </body>
 </html>

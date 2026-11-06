@@ -1,0 +1,101 @@
+table {
+	width: 100%;
+	margin: 10px 0px 10px;
+	table-layout: fixed;
+	padding: 5px;
+	border-collapse: separate; /* necesario para que se vean las esquinas redondas */
+	border-spacing: 0;
+
+	thead {
+		font-size: 24px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	/* el color va en las celdas, no en thead */
+	thead > tr > * {
+		background-color: #B8B09A;
+	}
+
+	tbody {
+		text-align: center;
+	}
+
+	tbody > tr > * {
+		background-color: #A3BCB1;
+	}
+
+	/* ---------- esquinas redondeadas ---------- */
+	thead > tr:first-child > :first-child {
+		border-top-left-radius: 30px;
+	}
+
+	thead > tr:first-child > :last-child {
+		border-top-right-radius: 30px;
+	}
+
+	tbody > tr:last-child > :first-child {
+		border-bottom-left-radius: 30px;
+	}
+
+	tbody .esquinaFinal {
+		border-bottom-right-radius: 30px;
+	}
+
+	tr {
+		height: 80px;
+		font-size: clamp(16px, 1.5vw, 30px);
+		word-break: break-word;
+	}
+
+	td a { /* quitar color azul de hipervínculos en la tabla */
+		color: #1D292A;
+		padding: 10px;
+	}
+
+}
+
+/* clase por asignatura */
+.PROGRAMACION {background-color: #D9A3A3;}
+.PROYECTO {background-color: #C3A3D1;}
+.SISTEMAS {background-color: #D6D3A0;}
+.DIGITALIZACION {background-color: #A0D1B8;}
+.MARCAS {background-color: #A5A3D6;}
+.INGLES {background-color: #B5B0C4; color: #1D292A;}
+.BASE {background-color: #D6B596;}
+.IPE {background-color: #B6D1A0;}
+.SOSTENIBILIDAD {background-color: #D6A0BC;}
+.RECREO {background-color: #C9DEC9;}
+.ENTORNOS {background-color: #A0D1CC;}
+
+/* ---------- Horario en móvil ---------- */
+@media (max-width: 700px) {
+	main {
+		padding: 10px 5px;
+	}
+
+	table {
+		margin: 10px 0px;
+		padding: 0;
+	}
+
+	table tr {
+		height: 50px;
+		font-size: 1.6vw; 
+		word-break: normal; 
+		overflow-wrap: normal;
+		hyphens: none;
+	}
+
+	table td {
+		padding: 2px;
+	}
+	
+	table td:first-child {
+		width: 13%;
+	}
+
+	table td a {
+		padding: 0;
+	}
+}

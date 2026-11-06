@@ -1,0 +1,108 @@
+table {
+
+}
+ 
+/* pantalla */
+#pantalla {
+
+}
+ 
+/* botones (números) */
+button {
+
+}
+ 
+/* tipos de botón */
+.operador {
+
+}
+ 
+.funcion {
+
+}
+ 
+.igual {
+
+}
+ 
+/* los botones claros se oscurecen al pasar el ratón
+   (los oscuros siguen aclarándose, como en el tema oscuro) */
+.operador:hover, .funcion:hover {
+
+}
+
+
+
+/* ---------- Calculadora ---------- */
+main h1 {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	max-width: 350px;
+	margin: 20px auto;
+	padding: 5px;
+	table-layout: fixed;
+	background-color: #8FB0B3;
+	border-collapse: separate;
+	border-spacing: 10px;
+	border-radius: 30px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+	td {
+		padding: 0;
+	}
+}
+
+/* pantalla */
+#pantalla {
+	width: 100%;
+	height: 70px;
+	padding: 0px 15px;
+	font-family: inherit;
+	font-size: 32px;
+	text-align: right;
+	color: #DCE6E6;
+	background-color: #1D292A;
+	border: none;
+	border-radius: 15px;
+}
+
+/* botones */
+button {
+	width: 100%;
+	height: 60px;
+	font-family: inherit;
+	font-size: 22px;
+	color: #DCE6E6;
+	background-color: #1D292A;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: filter 0.3s;
+}
+
+button:hover {
+	filter: brightness(0.9);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+/* tipos de botón */
+.operador {
+	color: #1D292A;
+	background-color: #DCE6E6;
+}
+
+.funcion {
+	color: #1D292A;
+	background-color: #B8B09A;
+}
+
+.igual {
+	color: #DCE6E6;
+    background-color: #4F7066;
+}
