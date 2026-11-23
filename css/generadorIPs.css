@@ -1,0 +1,28 @@
+
+
+button{
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+	background-color: #1D292A;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover{
+	filter: brightness(1.5);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+#ip {
+    margin: 20px;
+    padding: 15px 20px;
+    font-size: 32px;
+	background-color: #70664F;
+    border-radius: 20px;
+    text-align: center;
+}
